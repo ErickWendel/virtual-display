@@ -1,6 +1,6 @@
 {
   "name": "virtual-display",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-platform tray controller for virtual displays",
   "author": "Erick Wendel",
   "main": "app/main.js",
