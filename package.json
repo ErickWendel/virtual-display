@@ -1,6 +1,6 @@
 {
   "name": "virtual-display",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cross-platform tray controller for virtual displays",
   "author": "Erick Wendel",
   "main": "app/main.js",
@@ -53,6 +53,17 @@
       "syncDesktopName": true,
       "target": [
         "AppImage"
+      ]
+    },
+    "pacman": {
+      "depends": [
+        "gtk3",
+        "libnotify",
+        "nss",
+        "libxss",
+        "libxtst",
+        "xdg-utils",
+        "at-spi2-core"
       ]
     }
   }
