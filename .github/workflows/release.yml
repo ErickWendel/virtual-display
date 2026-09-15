@@ -40,7 +40,7 @@ jobs:
       - name: Install Linux packaging tools
         run: |
           sudo apt-get update
-          sudo apt-get install --yes --no-install-recommends rpm
+          sudo apt-get install --yes --no-install-recommends libarchive-tools rpm
 
       - name: Build Linux packages
         run: npm run dist:linux
