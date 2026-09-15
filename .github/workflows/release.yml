@@ -52,6 +52,7 @@ jobs:
             dist/virtual-display-*.AppImage
             dist/virtual-display-*.deb
             dist/virtual-display-*.rpm
+            dist/virtual-display-*.pacman
             dist/virtual-display-*.tar.gz
           )
           for artifact in "${artifacts[@]}"; do
@@ -63,6 +64,7 @@ jobs:
               virtual-display-*.AppImage \
               virtual-display-*.deb \
               virtual-display-*.rpm \
+              virtual-display-*.pacman \
               virtual-display-*.tar.gz \
               > SHA256SUMS
           )
@@ -75,6 +77,7 @@ jobs:
             dist/virtual-display-*.AppImage \
             dist/virtual-display-*.deb \
             dist/virtual-display-*.rpm \
+            dist/virtual-display-*.pacman \
             dist/virtual-display-*.tar.gz \
             dist/SHA256SUMS \
             --verify-tag \

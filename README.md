@@ -94,6 +94,20 @@ sudo dnf install ./virtual-display-*-x86_64.rpm
 Use the AppImage instead of the RPM on Bazzite, Silverblue, Kinoite, and other
 immutable Fedora variants.
 
+### Arch Linux and Arch-based systems
+
+Download the `.pacman` package from the latest
+[GitHub Release](https://github.com/ErickWendel/virtual-display/releases/latest)
+and install it with:
+
+```bash
+sudo pacman -U ./virtual-display-*.pacman
+```
+
+The package is also suitable for Manjaro, EndeavourOS, and other Arch-based
+distributions. It installs the application, desktop entry, icon, and required
+runtime dependencies without requiring AppImage/FUSE support.
+
 ### Portable archive
 
 The `.tar.gz` release contains the unpacked application and is useful when
