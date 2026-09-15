@@ -39,8 +39,9 @@ monitor.
 
 ## How it works
 
-1. The operating system exposes a virtual DRM connector using EDID firmware or
-   another platform-specific virtual display driver.
+1. On GNOME, the operating system exposes a virtual DRM connector using EDID
+   firmware or another platform-specific virtual display driver. On Hyprland,
+   Virtual Display creates a compositor headless output when enabled.
 2. Virtual Display discovers the physical and virtual connectors.
 3. The tray menu applies a safe GNOME layout through `gdctl` when you choose
    **Enable Virtual Display** or **Disable Virtual Display**.
@@ -51,9 +52,10 @@ make a login screen inaccessible.
 
 ## Current support
 
-- Linux with GNOME, Wayland, and `gdctl`.
-- A virtual DRM connector supplied through the kernel's
-  `drm.edid_firmware=CONNECTOR:FILE` argument.
+- Linux with GNOME, Wayland, and `gdctl`, or Hyprland with `hyprctl`.
+- GNOME requires a virtual DRM connector supplied through the kernel's
+  `drm.edid_firmware=CONNECTOR:FILE` argument. Hyprland uses a `VIRTUAL-1`
+  headless output and does not require EDID firmware.
 - Exactly one active physical monitor.
 
 If multiple physical monitors are active, the app refuses to change the layout

@@ -21,4 +21,5 @@ jobs:
       - run: node --check app/main.js
       - run: node --check app/preload.js
       - run: node --check app/platform/linux.js
+      - run: node --check app/platform/hyprland.js
       - run: node --check app/renderer/renderer.js
